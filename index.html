@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Using Local Storage</title>
+    <link rel="shortcut icon" href="icons8-globe-africa-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="todo-app">
+        <!-- Heading -->
+        <h1>To-Do List</h1>
+
+        <div id="add-section">
+            <form>
+                <!-- Item Name -->
+                <input id="item-name" class="form-class" type="text" placeholder="Item Name">
+
+                <!-- Deadline -->
+                <input id="item-date" class="form-class" type="date" placeholder="Deadline">
+
+                <!-- <input type="text" placeholder="Deadline" onhover="(this.type='date')"> -->
+
+                <!-- Priority DropDown -->
+                <select id="item-priority" class="form-class">
+                    <option value="" selected disabled>Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <!-- Add button -->
+                <button id="add-button" class="form-class" type="submit">Add Item</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Today's Task Section -->
+    <div class="todays-tasks common-task-section">
+        <h2>Today's TodoList</h2>
+        <div class="styleDiv" id="todays-tasks-list"></div>
+    </div>
+
+
+    <!-- Future's Task Section -->
+    <div class="futures-tasks common-task-section">
+        <h2>Future TodoList</h2>
+        <div class="styleDiv" id="futures-tasks-list"></div>
+    </div>
+
+
+    <!-- Completed's Task Section -->
+    <div class="completed-tasks common-task-section">
+        <h2>Completed TodoList</h2>
+        <div class="styleDiv" id="completed-tasks-list"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
